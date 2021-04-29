@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="3" started="3" failures="2" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.551">
+    <testsuite name="Feature: Check the app is getting loaded" time="0.551">
+      <testsuite name="Scenario: Check if the link is valid" time="0.551" incomplete="true">
+        <failure>
+          <expected>https://todomvc.com/examples/angular2/</expected>
+          <actual>https://todomvc.com/examples/angular2123/</actual>
+          junit.framework.ComparisonFailure: expected:&lt;...om/examples/angular2[]/&gt; but was:&lt;...om/examples/angular2[123]/&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at stepDefination.TodoTests.I_should_be_able_to_get_into_and_see_Todos_as_a_header(TodoTests.java:43)&#13;
+	at ✽.Then I should be able to get into and see Todos as a header(tODOApplication.feature:6)&#13;
+&#13;
+
+        </failure>
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the link is valid" time="0.284"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the link is valid" time="0.261"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the link is valid" time="0.006">
+          <failure>
+            <expected>https://todomvc.com/examples/angular2/</expected>
+            <actual>https://todomvc.com/examples/angular2123/</actual>
+            junit.framework.ComparisonFailure: expected:&lt;...om/examples/angular2[]/&gt; but was:&lt;...om/examples/angular2[123]/&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at stepDefination.TodoTests.I_should_be_able_to_get_into_and_see_Todos_as_a_header(TodoTests.java:43)&#13;
+	at ✽.Then I should be able to get into and see Todos as a header(tODOApplication.feature:6)&#13;
+&#13;
+
+          </failure>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

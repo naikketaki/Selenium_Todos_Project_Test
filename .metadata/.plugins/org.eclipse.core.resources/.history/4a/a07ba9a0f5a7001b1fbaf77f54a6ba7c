@@ -1,0 +1,81 @@
+package stepDefination;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.yaml.snakeyaml.introspector.Property;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import utility.PropertyFileReader;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.Properties;
+
+//import junit.framework.Assert;
+import org.junit.Assert;
+import org.junit.Test;
+
+public class TodoTests {
+	
+	WebDriver driver;
+	//System.setProperty("webdriver.ChromeDriver.driver", "C:\\Ketaki_264\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+	PropertyFileReader object = new PropertyFileReader();
+	
+	@Given("^Open Firefox and start application$")
+	public void Open_Firefox_and_start_application() throws Throwable {
+		
+		
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Ketaki_264\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+		driver=new ChromeDriver();
+		
+		
+		
+		driver.manage().window().maximize();
+		//driver.get("https://todomvc.com/examples/angular2/");
+	   
+	}
+
+	@When("^User click on valid link$")
+	public void User_click_on_valid_link() throws Throwable {
+		Properties property= object.getProperty();
+		driver.get(property.getProperty("browser.baseURL"));
+		//driver.get("https://todomvc.com/examples/angular2/");
+		
+	   
+	}
+
+	@SuppressWarnings("deprecation")
+	@Then("^I should be able to get into and see Todos as a header$")
+	public void I_should_be_able_to_get_into_and_see_Todos_as_a_header() throws Throwable {
+		String title=driver.getCurrentUrl();
+		System.out.println("My Url is" + title );
+		assertEquals(title, "https://todomvc.com/examples/angular2/");
+		
+	}
+	
+	@Given("^User on home page$")
+	public void User_on_home_page() throws Throwable {
+		//driver.get(property.getProperty("browser.baseURL"));
+		Properties property1= object.getProperty();
+		driver.get(property1.getProperty("browser.baseURL"));
+		User_click_on_valid_link();
+	}
+
+	@When("^Enter valid value on empty text box and Hit Enter button$")
+	public void Enter_valid_value_on_empty_text_box_and_Hit_Enter_button() throws Throwable {
+	   driver.findElement(By.xpath("/html/body/todo-app/section/header/input")).sendKeys("Go to GYM");
+	}
+
+	@Then("^Value should get added in the TODO box$")
+	public void Value_should_get_added_in_the_TODO_box() throws Throwable {
+	   System.out.println("Hello");
+	}
+
+
+
+}

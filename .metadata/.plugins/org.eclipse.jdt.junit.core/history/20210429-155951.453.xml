@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="18" started="18" failures="0" errors="2" ignored="1">
+  <testsuite name="runner.TestRunner" time="45.502">
+    <testsuite name="Feature: Todo software positive/Negative scenarios" time="45.502">
+      <testsuite name="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="1.056">
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="1.025"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="0.031"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Check if user is able to enter into text box" time="3.404">
+        <testcase name="Given User on home page" classname="Scenario: Check if user is able to enter into text box" time="1.256"/>
+        <testcase name="When Enter valid Value on empty text box and Hit Enter button" classname="Scenario: Check if user is able to enter into text box" time="2.148"/>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: Check if user is able to enter into text box" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Check the radio button functionality" time="2.209">
+        <testcase name="Given User on home page and there is a value in todo table" classname="Scenario: Check the radio button functionality" time="0.111"/>
+        <testcase name="When User clicks on radio button" classname="Scenario: Check the radio button functionality" time="2.098"/>
+        <testcase name="Then that particular selected value should get strikeout and we see clear complete" classname="Scenario: Check the radio button functionality" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Check if User can add more than one value in TO-do" time="1.534">
+        <testcase name="Given User on home page" classname="Scenario: Check if User can add more than one value in TO-do" time="1.533"/>
+        <testcase name="When User enter more than one values and hit enter" classname="Scenario: Check if User can add more than one value in TO-do" time="0.001"/>
+        <testcase name="Then More than one value should get added into table" classname="Scenario: Check if User can add more than one value in TO-do" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: User should not be able to add empty string in the text box" time="0.458" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/todo-app/section/section/ul/li/div/label"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-PPCPFO7', ip: '192.168.178.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 40bb16438a21996474febf85e53ea0a6
+*** Element info: {Using=xpath, value=/html/body/todo-app/section/section/ul/li/div/label}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at stepDefination.TodoTests.User_enters_empty_string_and_try_to_Hit_Enter_button(TodoTests.java:132)&#13;
+	at ✽.When User enters empty string and try to Hit Enter button(tODOApplication.feature:30)&#13;
+&#13;
+</error>
+        <testcase name="Given User on home page" classname="Scenario: User should not be able to add empty string in the text box" time="0.452"/>
+        <testcase name="When User enters empty string and try to Hit Enter button" classname="Scenario: User should not be able to add empty string in the text box" time="0.005">
+          <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/todo-app/section/section/ul/li/div/label"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-PPCPFO7', ip: '192.168.178.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 40bb16438a21996474febf85e53ea0a6
+*** Element info: {Using=xpath, value=/html/body/todo-app/section/section/ul/li/div/label}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at stepDefination.TodoTests.User_enters_empty_string_and_try_to_Hit_Enter_button(TodoTests.java:132)&#13;
+	at ✽.When User enters empty string and try to Hit Enter button(tODOApplication.feature:30)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: User should not be able to add empty string in the text box" time="0.0" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: User should not only enter special chars in the text box" time="1.313">
+        <testcase name="Given User on home page" classname="Scenario: User should not only enter special chars in the text box" time="1.233"/>
+        <testcase name="When User enters only special chars and Hit Enter button" classname="Scenario: User should not only enter special chars in the text box" time="0.077"/>
+        <testcase name="Then error message should be shown of entering valid value" classname="Scenario: User should not only enter special chars in the text box" time="0.003"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

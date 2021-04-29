@@ -1,0 +1,49 @@
+package stepDefination;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+//import junit.framework.Assert;
+import org.junit.Assert;
+import org.junit.Test;
+
+public class TodoTests {
+	
+	WebDriver driver;
+	//System.setProperty("webdriver.ChromeDriver.driver", "C:\\Ketaki_264\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+	
+	@Given("^Open Firefox and start application$")
+	public void Open_Firefox_and_start_application() throws Throwable {
+		System.setProperty("webdriver.chrome.driver", "C:\\Ketaki_264\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+		driver=new ChromeDriver();
+		
+		
+		
+		driver.manage().window().maximize();
+		//driver.get("https://todomvc.com/examples/angular2/");
+	   
+	}
+
+	@When("^User click on valid link$")
+	public void User_click_on_valid_link() throws Throwable {
+		
+		driver.get("https://todomvc.com/examples/angular2/");
+		
+	   
+	}
+
+	@SuppressWarnings("deprecation")
+	@Then("^I should be able to get into and see Todos as a header$")
+	public void I_should_be_able_to_get_into_and_see_Todos_as_a_header() throws Throwable {
+		String title=driver.getCurrentUrl();
+		System.out.println("My Url is" + title );
+		assertEquals(title, "https://todomvc.com/examples/angular2/");
+		
+	}
+
+}

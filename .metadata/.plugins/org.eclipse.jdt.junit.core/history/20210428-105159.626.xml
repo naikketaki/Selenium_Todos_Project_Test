@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="9.655">
+    <testsuite name="Feature: Todo software positive scenarios" time="9.655">
+      <testsuite name="Scenario: Check if the link is valid" time="1.973">
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the link is valid" time="0.75"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the link is valid" time="0.3"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the link is valid" time="0.923"/>
+      </testsuite>
+      <testsuite name="Scenario: Check if user is able to enter into text box" time="2.723">
+        <testcase name="Given User on home page" classname="Scenario: Check if user is able to enter into text box" time="1.128"/>
+        <testcase name="When Enter valid value on empty text box and Hit Enter button" classname="Scenario: Check if user is able to enter into text box" time="0.001"/>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: Check if user is able to enter into text box" time="1.59"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

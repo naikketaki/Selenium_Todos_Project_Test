@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.446">
+    <testsuite name="Feature: Check the app is getting loaded" time="0.446">
+      <testsuite name="Scenario: Check if the link is valid" time="0.446">
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the link is valid" time="0.444"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the link is valid" time="0.001"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the link is valid" time="0.001"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="15" started="15" failures="0" errors="0" ignored="3">
+  <testsuite name="runner.TestRunner" time="38.532">
+    <testsuite name="Feature: Todo software positive scenarios" time="38.532">
+      <testsuite name="Scenario: Check if the link is valid" time="1.112">
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the link is valid" time="1.074"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the link is valid" time="0.037"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the link is valid" time="0.001"/>
+      </testsuite>
+      <testsuite name="Scenario Outline: Check if user is able to enter into text box" time="27.662">
+        <testsuite name="Examples:" time="27.662">
+          <testsuite name="| ket |" time="5.22">
+            <testcase name="Given User on home page" classname="| ket |" time="2.134"/>
+            <testcase name="When Enter valid Value on empty text box and Hit Enter button" classname="| ket |" time="3.086"/>
+            <testcase name="Then Value should get added in the TODO box" classname="| ket |" time="0.0"/>
+          </testsuite>
+          <testsuite name="| Call |" time="5.203">
+            <testcase name="Given User on home page" classname="| Call |" time="2.155"/>
+            <testcase name="When Enter valid Value on empty text box and Hit Enter button" classname="| Call |" time="3.048"/>
+            <testcase name="Then Value should get added in the TODO box" classname="| Call |" time="0.0"/>
+          </testsuite>
+          <testsuite name="| doyourworks |" time="5.263">
+            <testcase name="Given User on home page" classname="| doyourworks |" time="2.215"/>
+            <testcase name="When Enter valid Value on empty text box and Hit Enter button" classname="| doyourworks |" time="3.048"/>
+            <testcase name="Then Value should get added in the TODO box" classname="| doyourworks |" time="0.0"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+      <testsuite name="Scenario: Check the radio button functionality" time="0.003" incomplete="true">
+        <skipped/>
+        <testcase name="Given User on home page and there is a value in todo table" classname="Scenario: Check the radio button functionality" time="0.003" ignored="true"/>
+        <testcase name="When User clicks on radio button" classname="Scenario: Check the radio button functionality" time="0.0" ignored="true"/>
+        <testcase name="Then that particular selected value should get strikeout" classname="Scenario: Check the radio button functionality" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

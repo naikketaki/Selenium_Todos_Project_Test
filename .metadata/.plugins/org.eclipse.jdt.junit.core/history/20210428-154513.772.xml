@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="9" started="9" failures="0" errors="2" ignored="2">
+  <testsuite name="runner.TestRunner" time="16.367">
+    <testsuite name="Feature: Todo software positive scenarios" time="16.367">
+      <testsuite name="Scenario: Check if the link is valid" time="1.364">
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the link is valid" time="1.004"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the link is valid" time="0.36"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the link is valid" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Check if user is able to enter into text box" time="3.292">
+        <testcase name="Given User on home page" classname="Scenario: Check if user is able to enter into text box" time="1.166"/>
+        <testcase name="When Enter valid Value on empty text box and Hit Enter button" classname="Scenario: Check if user is able to enter into text box" time="2.125"/>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: Check if user is able to enter into text box" time="0.001"/>
+      </testsuite>
+      <testsuite name="Scenario: Check the radio button functionality" time="0.018" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='What needs to be done?']"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-PPCPFO7', ip: '192.168.178.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63400}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 139a92a8edf390a3fd48493d778997e4
+*** Element info: {Using=xpath, value=//input[@placeholder='What needs to be done?']}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at stepDefination.TodoTests.Enter_valid_value_on_empty_text_box_and_Hit_Enter_button(TodoTests.java:70)&#13;
+	at stepDefination.TodoTests.User_on_home_page_and_there_is_a_value_in_todo_table(TodoTests.java:84)&#13;
+	at ✽.Given User on home page and there is a value in todo table(tODOApplication.feature:14)&#13;
+&#13;
+</error>
+        <testcase name="Given User on home page and there is a value in todo table" classname="Scenario: Check the radio button functionality" time="0.016">
+          <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='What needs to be done?']"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-PPCPFO7', ip: '192.168.178.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63400}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 139a92a8edf390a3fd48493d778997e4
+*** Element info: {Using=xpath, value=//input[@placeholder='What needs to be done?']}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at stepDefination.TodoTests.Enter_valid_value_on_empty_text_box_and_Hit_Enter_button(TodoTests.java:70)&#13;
+	at stepDefination.TodoTests.User_on_home_page_and_there_is_a_value_in_todo_table(TodoTests.java:84)&#13;
+	at ✽.Given User on home page and there is a value in todo table(tODOApplication.feature:14)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When User clicks on radio button" classname="Scenario: Check the radio button functionality" time="0.0" ignored="true"/>
+        <testcase name="Then that particular selected value should get strikeout" classname="Scenario: Check the radio button functionality" time="0.006" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

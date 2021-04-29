@@ -1,0 +1,25 @@
+Feature: Todo software positive scenarios 
+ 
+ Scenario: Check if the link is valid 
+ Given Open Firefox and start application 
+ When User click on valid link
+ Then I should be able to get into and see Todos as a header
+ 
+ Scenario: Check if user is able to enter into text box
+ Given User on home page
+ When Enter valid Value on empty text box and Hit Enter button
+ Then Value should get added in the TODO box 
+
+ 
+Scenario: Check the radio button functionality
+ Given User on home page and there is a value in todo table
+ When User clicks on radio button
+ Then that particular selected value should get strikeout and we see clear complete 
+ 
+ #/Scenario: Check if User can add more than one value in TO-do
+ #Given User on home page
+ #When User enter more than one values and hit enter
+ #| samit |
+ #| DAD |
+ #Then More than one value should get added into table/
+

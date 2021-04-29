@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="3" started="3" failures="0" errors="2" ignored="2">
+  <testsuite name="runner.TestRunner" time="0.001">
+    <testsuite name="Feature: Check the app is getting loaded" time="0.001">
+      <testsuite name="Scenario: Check if the link is valid" time="0.0" incomplete="true">
+        <error>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html&#13;
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)&#13;
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)&#13;
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)&#13;
+	at stepDefination.TodoTests.Open_Firefox_and_start_application(TodoTests.java:17)&#13;
+	at ✽.Given Open Firefox and start application(tODOApplication.feature:4)&#13;
+&#13;
+</error>
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the link is valid" time="0.0">
+          <error>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html&#13;
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)&#13;
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)&#13;
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)&#13;
+	at stepDefination.TodoTests.Open_Firefox_and_start_application(TodoTests.java:17)&#13;
+	at ✽.Given Open Firefox and start application(tODOApplication.feature:4)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the link is valid" time="0.0" ignored="true"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the link is valid" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

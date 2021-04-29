@@ -1,0 +1,23 @@
+package stepDefination;
+
+public class TodoTests {
+	
+	@Given("^Open Firefox and start application$")
+	public void Open_Firefox_and_start_application() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+
+	@When("^User click on valid link$")
+	public void User_click_on_valid_link() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+
+	@Then("^I should be able to get into and see Todos as a header$")
+	public void I_should_be_able_to_get_into_and_see_Todos_as_a_header() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+
+}

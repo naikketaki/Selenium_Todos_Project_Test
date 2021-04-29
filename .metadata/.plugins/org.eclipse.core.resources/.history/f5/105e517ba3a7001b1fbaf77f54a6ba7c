@@ -1,0 +1,16 @@
+package runner;
+
+
+import org.junit.runner.RunWith;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@Cucumber.Options(features="feature", glue={"stepDefination"}, plugin = {"html:target/cucumber-reports/cucumber-pretty","json:target/cucumber.json","testng:target/testng-cucumber-reports/cuketestng.xml"})
+public class TestRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

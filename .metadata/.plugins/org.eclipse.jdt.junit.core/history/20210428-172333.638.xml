@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="9" started="9" failures="0" errors="2" ignored="1">
+  <testsuite name="runner.TestRunner" time="19.889">
+    <testsuite name="Feature: Todo software positive scenarios" time="19.889">
+      <testsuite name="Scenario: Check if the link is valid" time="0.966">
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the link is valid" time="0.59"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the link is valid" time="0.375"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the link is valid" time="0.001"/>
+      </testsuite>
+      <testsuite name="Scenario: Check if user is able to enter into text box" time="3.152">
+        <testcase name="Given User on home page" classname="Scenario: Check if user is able to enter into text box" time="1.091"/>
+        <testcase name="When Enter valid Value on empty text box and Hit Enter button" classname="Scenario: Check if user is able to enter into text box" time="2.061"/>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: Check if user is able to enter into text box" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Check the radio button functionality" time="0.056" incomplete="true">
+        <error>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression [@class='toggle' and @type='checkbox'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '[@class='toggle' and @type='checkbox']' is not a valid XPath expression.
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-PPCPFO7', ip: '192.168.178.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55424}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85f227a84c85a1d814d9835702f3417c
+*** Element info: {Using=xpath, value=[@class='toggle' and @type='checkbox']}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at stepDefination.TodoTests.User_clicks_on_radio_button(TodoTests.java:94)&#13;
+	at ✽.When User clicks on radio button(tODOApplication.feature:15)&#13;
+&#13;
+</error>
+        <testcase name="Given User on home page and there is a value in todo table" classname="Scenario: Check the radio button functionality" time="0.05"/>
+        <testcase name="When User clicks on radio button" classname="Scenario: Check the radio button functionality" time="0.005">
+          <error>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression [@class='toggle' and @type='checkbox'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '[@class='toggle' and @type='checkbox']' is not a valid XPath expression.
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-PPCPFO7', ip: '192.168.178.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55424}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85f227a84c85a1d814d9835702f3417c
+*** Element info: {Using=xpath, value=[@class='toggle' and @type='checkbox']}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at stepDefination.TodoTests.User_clicks_on_radio_button(TodoTests.java:94)&#13;
+	at ✽.When User clicks on radio button(tODOApplication.feature:15)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then that particular selected value should get strikeout and we see clear complete" classname="Scenario: Check the radio button functionality" time="0.002" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

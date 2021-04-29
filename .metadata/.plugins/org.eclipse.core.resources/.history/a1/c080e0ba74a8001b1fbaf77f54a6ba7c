@@ -1,0 +1,130 @@
+package stepDefination;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.yaml.snakeyaml.introspector.Property;
+
+import cucumber.api.DataTable;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import utility.PropertyFileReader;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.List;
+import java.util.Properties;
+
+//import junit.framework.Assert;
+import org.junit.Assert;
+import org.junit.Test;
+
+public class TodoTests {
+	
+	WebDriver driver;
+	
+	//PropertyFileReader object = new PropertyFileReader();
+	@Before()
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Ketaki_264\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+		driver=new ChromeDriver();	
+		
+	}
+	@Given("^Open Firefox and start application$")
+	public void Open_Firefox_and_start_application() throws Throwable {
+		
+		driver.manage().window().maximize();
+		//driver.get("https://todomvc.com/examples/angular2/");
+	   
+	}
+
+	@When("^User click on valid link$")
+	public void User_click_on_valid_link() throws Throwable {
+		//Properties property= object.getProperty();
+		//driver.get(property.getProperty("browser.baseURL"));
+		driver.get("https://todomvc.com/examples/angular2/");
+		
+	   
+	}
+
+	@SuppressWarnings("deprecation")
+	@Then("^I should be able to get into and see Todos as a header$")
+	public void I_should_be_able_to_get_into_and_see_Todos_as_a_header() throws Throwable {
+		String title=driver.getCurrentUrl();
+		System.out.println("My Url is" + title );
+		assertEquals(title, "https://todomvc.com/examples/angular2/");
+		
+	}
+	
+	@Given("^User on home page$")
+	public void User_on_home_page() throws Throwable {
+		User_click_on_valid_link();
+		Thread.sleep(1000);
+	}
+
+	@When("^Enter valid Value on empty text box and Hit Enter button$")
+	public void Enter_valid_value_on_empty_text_box_and_Hit_Enter_button() throws Throwable {
+		driver.findElement(By.xpath("//input[@placeholder='What needs to be done?']")).sendKeys("Hello");
+		//driver.findElement(By.xpath("//input[@placeholder='What needs to be done?']")).sendKeys("Hello");
+		Thread.sleep(1000);
+	}
+
+	@Then("^Value should get added in the TODO box$")
+	public void Value_should_get_added_in_the_TODO_box() throws Throwable {
+	   System.out.println("Hello");
+	   driver.findElement(By.xpath("//input[@placeholder='What needs to be done?']")).sendKeys(Keys.ENTER);
+	   Thread.sleep(2000);
+	}
+	
+	@Given("^User on home page and there is a value in todo table$")
+	public void User_on_home_page_and_there_is_a_value_in_todo_table() throws Throwable {
+		User_click_on_valid_link();
+		Thread.sleep(1000);
+		Enter_valid_value_on_empty_text_box_and_Hit_Enter_button();
+		Thread.sleep(2000);
+		Value_should_get_added_in_the_TODO_box();
+		System.out.println("Hello, i am inside this");
+	}
+
+	@When("^User clicks on radio button$")
+	public void User_clicks_on_radio_button() throws Throwable {
+		driver.findElement(By.xpath("/html/body/todo-app/section/section/ul/li[1]/div/input")).click();
+		
+	}
+
+	@Then("^that particular selected value should get strikeout and we see clear complete$")
+	public void that_particular_selected_value_should_get_strikeout() throws Throwable {
+	   Thread.sleep(1000);
+	  String value =driver.findElement(By.xpath("//input[@type='checkbox' and @class='toggle']")).getText();
+	   System.out.println("This is my value---->>>"+ value);
+	   Thread.sleep(1000);
+	  String Ele= driver.findElement(By.xpath("//button[@class='clear-completed']")).getText();
+	  System.out.println("hello hello====>>>" + Ele);
+	  assertEquals(Ele, "Clear completed");
+	}
+	
+	@When("^User enter more than one values and hit enter$")
+	public void User_enter_more_than_one_values_and_hit_enter(DataTable values) throws Throwable {
+		List<List<String>> data= values.raw();
+	   
+	}
+
+	@Then("^More than one value should get added into table$")
+	public void More_than_one_value_should_get_added_into_table() throws Throwable {
+	 
+	}
+
+	
+	
+	/* @After() public void quidBrowser() { driver.quit(); } */ 
+	
+
+
+
+}

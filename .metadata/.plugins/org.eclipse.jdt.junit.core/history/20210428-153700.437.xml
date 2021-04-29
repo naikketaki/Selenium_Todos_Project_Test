@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="7" started="6" failures="0" errors="0" ignored="3">
+  <testsuite name="runner.TestRunner" time="4.805">
+    <testsuite name="Feature: Todo software positive scenarios" time="4.805">
+      <testsuite name="Scenario: Check if the link is valid" time="1.197">
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the link is valid" time="0.975"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the link is valid" time="0.221"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the link is valid" time="0.001"/>
+      </testsuite>
+      <testcase name="Scenario Outline: Check if user is able to enter into text box" classname="Scenario Outline: Check if user is able to enter into text box" incomplete="true"/>
+      <testsuite name="Scenario: Check the radio button functionality" time="0.0" incomplete="true">
+        <skipped/>
+        <testcase name="Given User on home page and there is a value in todo table" classname="Scenario: Check the radio button functionality" time="0.0" ignored="true"/>
+        <testcase name="When User clicks on radio button" classname="Scenario: Check the radio button functionality" time="0.0" ignored="true"/>
+        <testcase name="Then that particular selected value should get strikeout" classname="Scenario: Check the radio button functionality" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

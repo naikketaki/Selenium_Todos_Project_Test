@@ -1,0 +1,12 @@
+Feature: Todo software positive scenarios 
+ 
+ Scenario: Check if the link is valid 
+ Given Open Firefox and start application 
+ When User click on valid link
+ Then I should be able to get into and see Todos as a header
+ 
+ Scenario: Check if user is able to enter into text box
+ Given User on home page
+ When Enter valid value on empty text box
+ And  Hit Enter button
+ Then Value should get added in the TODO box 

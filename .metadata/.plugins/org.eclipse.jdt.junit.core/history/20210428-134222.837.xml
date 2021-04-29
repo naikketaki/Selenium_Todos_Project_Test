@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="12" started="12" failures="0" errors="0" ignored="6">
+  <testsuite name="runner.TestRunner" time="21.298">
+    <testsuite name="Feature: Todo software positive scenarios" time="21.298">
+      <testsuite name="Scenario: Check if the link is valid" time="2.965">
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the link is valid" time="1.103"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the link is valid" time="0.143"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the link is valid" time="1.718"/>
+      </testsuite>
+      <testsuite name="Scenario Outline: Check if user is able to enter into text box" time="12.828">
+        <testsuite name="Examples:" time="12.828">
+          <testsuite name="| ket |" time="1.016" incomplete="true">
+            <skipped/>
+            <testcase name="Given User on home page" classname="| ket |" time="0.002"/>
+            <testcase name="When Enter valid ket on empty text box and Hit Enter button" classname="| ket |" time="0.001" ignored="true"/>
+            <testcase name="Then Value should get added in the TODO box" classname="| ket |" time="1.013" ignored="true"/>
+          </testsuite>
+          <testsuite name="| Call |" time="1.625" incomplete="true">
+            <skipped/>
+            <testcase name="Given User on home page" classname="| Call |" time="0.0"/>
+            <testcase name="When Enter valid Call on empty text box and Hit Enter button" classname="| Call |" time="0.001" ignored="true"/>
+            <testcase name="Then Value should get added in the TODO box" classname="| Call |" time="1.624" ignored="true"/>
+          </testsuite>
+          <testsuite name="| doyourworks |" time="1.085" incomplete="true">
+            <skipped/>
+            <testcase name="Given User on home page" classname="| doyourworks |" time="0.0"/>
+            <testcase name="When Enter valid doyourworks on empty text box and Hit Enter button" classname="| doyourworks |" time="0.0" ignored="true"/>
+            <testcase name="Then Value should get added in the TODO box" classname="| doyourworks |" time="1.085" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

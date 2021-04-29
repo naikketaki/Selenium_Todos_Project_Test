@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="9" started="9" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="20.833">
+    <testsuite name="Feature: Todo software positive scenarios" time="20.833">
+      <testsuite name="Scenario: Check if the link is valid" time="0.854">
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the link is valid" time="0.73"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the link is valid" time="0.123"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the link is valid" time="0.001"/>
+      </testsuite>
+      <testsuite name="Scenario: Check if user is able to enter into text box" time="3.182">
+        <testcase name="Given User on home page" classname="Scenario: Check if user is able to enter into text box" time="1.128"/>
+        <testcase name="When Enter valid Value on empty text box and Hit Enter button" classname="Scenario: Check if user is able to enter into text box" time="2.054"/>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: Check if user is able to enter into text box" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Check the radio button functionality" time="1.163">
+        <testcase name="Given User on home page and there is a value in todo table" classname="Scenario: Check the radio button functionality" time="0.099"/>
+        <testcase name="When User clicks on radio button" classname="Scenario: Check the radio button functionality" time="1.063"/>
+        <testcase name="Then that particular selected value should get strikeout and we see clear complete" classname="Scenario: Check the radio button functionality" time="0.001"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

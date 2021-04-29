@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.0">
+    <testsuite name="Feature: Check the app is getting loaded" time="0.0">
+      <testcase name="Scenario: Check if the link is valid" classname="Scenario: Check if the link is valid" time="0.0"/>
+    </testsuite>
+  </testsuite>
+</testrun>

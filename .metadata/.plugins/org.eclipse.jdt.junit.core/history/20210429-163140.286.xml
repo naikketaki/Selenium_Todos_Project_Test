@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="18" started="18" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="50.909">
+    <testsuite name="Feature: Todo software positive/Negative scenarios" time="50.909">
+      <testsuite name="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="5.168">
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="0.653"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="0.268"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="4.247"/>
+      </testsuite>
+      <testsuite name="Scenario: Check if user is able to enter into text box" time="4.315">
+        <testcase name="Given User on home page" classname="Scenario: Check if user is able to enter into text box" time="1.306"/>
+        <testcase name="When Enter valid Value on empty text box and Hit Enter button" classname="Scenario: Check if user is able to enter into text box" time="2.049"/>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: Check if user is able to enter into text box" time="0.96"/>
+      </testsuite>
+      <testsuite name="Scenario: Check the radio button functionality" time="2.937">
+        <testcase name="Given User on home page and there is a value in todo table" classname="Scenario: Check the radio button functionality" time="0.11"/>
+        <testcase name="When User clicks on radio button" classname="Scenario: Check the radio button functionality" time="2.122"/>
+        <testcase name="Then that particular selected value should get strikeout and we see clear complete" classname="Scenario: Check the radio button functionality" time="0.705"/>
+      </testsuite>
+      <testsuite name="Scenario: Check if User can add more than one value in TO-do" time="2.241">
+        <testcase name="Given User on home page" classname="Scenario: Check if User can add more than one value in TO-do" time="1.462"/>
+        <testcase name="When User enter more than one values and hit enter" classname="Scenario: Check if User can add more than one value in TO-do" time="0.003"/>
+        <testcase name="Then More than one value should get added into table" classname="Scenario: Check if User can add more than one value in TO-do" time="0.776"/>
+      </testsuite>
+      <testsuite name="Scenario: User should not be able to add empty string in the text box" time="4.173">
+        <testcase name="Given User on home page and there is not any value in the textbox" classname="Scenario: User should not be able to add empty string in the text box" time="1.412"/>
+        <testcase name="When User enters empty string and try to Hit Enter button" classname="Scenario: User should not be able to add empty string in the text box" time="2.106"/>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: User should not be able to add empty string in the text box" time="0.655"/>
+      </testsuite>
+      <testsuite name="Scenario: User should not only enter special chars in the text box" time="3.113">
+        <testcase name="Given User on home page" classname="Scenario: User should not only enter special chars in the text box" time="1.395"/>
+        <testcase name="When User enters only special chars and Hit Enter button" classname="Scenario: User should not only enter special chars in the text box" time="1.045"/>
+        <testcase name="Then error message should be shown of entering valid value" classname="Scenario: User should not only enter special chars in the text box" time="0.673"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

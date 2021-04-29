@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MyTestCase" project="serenity-rest-starter" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="ketakitestcases.MyTestCase" time="14.99">
+    <testcase name="TestStatuscode" classname="ketakitestcases.MyTestCase" time="11.521"/>
+    <testcase name="TestString" classname="ketakitestcases.MyTestCase" time="0.831"/>
+    <testcase name="TestHeaders" classname="ketakitestcases.MyTestCase" time="2.638"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="18" started="18" failures="0" errors="0" ignored="10">
+  <testsuite name="runner.TestRunner" time="37.053">
+    <testsuite name="Feature: Todo software positive scenarios" time="37.053">
+      <testsuite name="Scenario: Check if the link is valid" time="3.344">
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the link is valid" time="0.597"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the link is valid" time="0.038"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the link is valid" time="2.709"/>
+      </testsuite>
+      <testsuite name="Scenario Outline: Check if user is able to enter into text box" time="14.847">
+        <testsuite name="Examples:" time="14.847">
+          <testsuite name="| ket |" time="3.011" incomplete="true">
+            <skipped/>
+            <testcase name="Given User on home page" classname="| ket |" time="0.003"/>
+            <testcase name="When Enter valid ket on empty text box and Hit Enter button" classname="| ket |" time="0.0" ignored="true"/>
+            <testcase name="Then Value should get added in the TODO box" classname="| ket |" time="3.008" ignored="true"/>
+          </testsuite>
+          <testsuite name="| Call |" time="0.896" incomplete="true">
+            <skipped/>
+            <testcase name="Given User on home page" classname="| Call |" time="0.0"/>
+            <testcase name="When Enter valid Call on empty text box and Hit Enter button" classname="| Call |" time="0.001" ignored="true"/>
+            <testcase name="Then Value should get added in the TODO box" classname="| Call |" time="0.895" ignored="true"/>
+          </testsuite>
+          <testsuite name="| doyourworks |" time="2.772" incomplete="true">
+            <skipped/>
+            <testcase name="Given User on home page" classname="| doyourworks |" time="0.001"/>
+            <testcase name="When Enter valid doyourworks on empty text box and Hit Enter button" classname="| doyourworks |" time="0.0" ignored="true"/>
+            <testcase name="Then Value should get added in the TODO box" classname="| doyourworks |" time="2.771" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+      <testsuite name="Scenario: Check when the radio button is getting clicked" time="2.66" incomplete="true">
+        <skipped/>
+        <testcase name="Given User on home page" classname="Scenario: Check when the radio button is getting clicked" time="0.0"/>
+        <testcase name="When Enter valid value on empty text box and Hit Enter button" classname="Scenario: Check when the radio button is getting clicked" time="0.0" ignored="true"/>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: Check when the radio button is getting clicked" time="2.66" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Check if user is able to enter into text box" time="3.934" incomplete="true">
+        <skipped/>
+        <testcase name="Given User on home page" classname="Scenario: Check if user is able to enter into text box" time="0.0"/>
+        <testcase name="When Enter valid value on empty text box and Hit Enter button" classname="Scenario: Check if user is able to enter into text box" time="0.0" ignored="true"/>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: Check if user is able to enter into text box" time="3.934" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

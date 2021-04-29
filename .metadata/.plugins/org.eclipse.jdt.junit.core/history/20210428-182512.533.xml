@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="9" started="9" failures="0" errors="2" ignored="0">
+  <testsuite name="runner.TestRunner" time="19.217">
+    <testsuite name="Feature: Todo software positive scenarios" time="19.217">
+      <testsuite name="Scenario: Check if the link is valid" time="0.606">
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the link is valid" time="0.578"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the link is valid" time="0.028"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the link is valid" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Check if user is able to enter into text box" time="3.165">
+        <testcase name="Given User on home page" classname="Scenario: Check if user is able to enter into text box" time="1.111"/>
+        <testcase name="When Enter valid Value on empty text box and Hit Enter button" classname="Scenario: Check if user is able to enter into text box" time="2.054"/>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: Check if user is able to enter into text box" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Check the radio button functionality" time="0.145" incomplete="true">
+        <error>java.lang.ClassCastException: class org.openqa.selenium.remote.RemoteWebElement cannot be cast to class java.util.List (org.openqa.selenium.remote.RemoteWebElement is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')&#13;
+	at stepDefination.TodoTests.that_particular_selected_value_should_get_strikeout(TodoTests.java:101)&#13;
+	at ✽.Then that particular selected value should get strikeout and we see clear complete(tODOApplication.feature:16)&#13;
+&#13;
+</error>
+        <testcase name="Given User on home page and there is a value in todo table" classname="Scenario: Check the radio button functionality" time="0.115"/>
+        <testcase name="When User clicks on radio button" classname="Scenario: Check the radio button functionality" time="0.025"/>
+        <testcase name="Then that particular selected value should get strikeout and we see clear complete" classname="Scenario: Check the radio button functionality" time="0.004">
+          <error>java.lang.ClassCastException: class org.openqa.selenium.remote.RemoteWebElement cannot be cast to class java.util.List (org.openqa.selenium.remote.RemoteWebElement is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')&#13;
+	at stepDefination.TodoTests.that_particular_selected_value_should_get_strikeout(TodoTests.java:101)&#13;
+	at ✽.Then that particular selected value should get strikeout and we see clear complete(tODOApplication.feature:16)&#13;
+&#13;
+</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="6" started="6" failures="0" errors="2" ignored="2">
+  <testsuite name="runner.TestRunner" time="0.617">
+    <testsuite name="Feature: Todo software positive scenarios" time="0.617">
+      <testsuite name="Scenario: Check if the link is valid" time="0.602">
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the link is valid" time="0.448"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the link is valid" time="0.154"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the link is valid" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Check if user is able to enter into text box" time="0.006" incomplete="true">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null&#13;
+	at stepDefination.TodoTests.User_click_on_valid_link(TodoTests.java:46)&#13;
+	at stepDefination.TodoTests.User_on_home_page(TodoTests.java:64)&#13;
+	at ✽.Given User on home page(tODOApplication.feature:9)&#13;
+&#13;
+</error>
+        <testcase name="Given User on home page" classname="Scenario: Check if user is able to enter into text box" time="0.006">
+          <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null&#13;
+	at stepDefination.TodoTests.User_click_on_valid_link(TodoTests.java:46)&#13;
+	at stepDefination.TodoTests.User_on_home_page(TodoTests.java:64)&#13;
+	at ✽.Given User on home page(tODOApplication.feature:9)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When Enter valid value on empty text box and Hit Enter button" classname="Scenario: Check if user is able to enter into text box" time="0.001" ignored="true"/>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: Check if user is able to enter into text box" time="0.002" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

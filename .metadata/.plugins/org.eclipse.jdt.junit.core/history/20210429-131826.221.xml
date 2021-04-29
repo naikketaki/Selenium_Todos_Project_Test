@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="15" started="15" failures="2" errors="0" ignored="1">
+  <testsuite name="runner.TestRunner" time="34.761">
+    <testsuite name="Feature: Todo software positive/Negative scenarios" time="34.761">
+      <testsuite name="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="0.694">
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="0.531"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="0.163"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Check if user is able to enter into text box" time="3.388">
+        <testcase name="Given User on home page" classname="Scenario: Check if user is able to enter into text box" time="1.165"/>
+        <testcase name="When Enter valid Value on empty text box and Hit Enter button" classname="Scenario: Check if user is able to enter into text box" time="2.223"/>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: Check if user is able to enter into text box" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Check the radio button functionality" time="2.254">
+        <testcase name="Given User on home page and there is a value in todo table" classname="Scenario: Check the radio button functionality" time="0.136"/>
+        <testcase name="When User clicks on radio button" classname="Scenario: Check the radio button functionality" time="2.118"/>
+        <testcase name="Then that particular selected value should get strikeout and we see clear complete" classname="Scenario: Check the radio button functionality" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Check if User can add more than one value in TO-do" time="1.466">
+        <testcase name="Given User on home page" classname="Scenario: Check if User can add more than one value in TO-do" time="1.465"/>
+        <testcase name="When User enter more than one values and hit enter" classname="Scenario: Check if User can add more than one value in TO-do" time="0.001"/>
+        <testcase name="Then More than one value should get added into table" classname="Scenario: Check if User can add more than one value in TO-do" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: User should not be able to add empty string in the text box" time="0.205" incomplete="true">
+        <failure>java.lang.AssertionError: The object you enter return null expected null, but was:&lt;&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotNull(Assert.java:664)&#13;
+	at org.junit.Assert.assertNull(Assert.java:646)&#13;
+	at stepDefination.TodoTests.User_enters_empty_string_and_try_to_Hit_Enter_button(TodoTests.java:131)&#13;
+	at ✽.When User enters empty string and try to Hit Enter button(tODOApplication.feature:29)&#13;
+&#13;
+</failure>
+        <testcase name="Given User on home page" classname="Scenario: User should not be able to add empty string in the text box" time="0.2"/>
+        <testcase name="When User enters empty string and try to Hit Enter button" classname="Scenario: User should not be able to add empty string in the text box" time="0.005">
+          <failure>java.lang.AssertionError: The object you enter return null expected null, but was:&lt;&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotNull(Assert.java:664)&#13;
+	at org.junit.Assert.assertNull(Assert.java:646)&#13;
+	at stepDefination.TodoTests.User_enters_empty_string_and_try_to_Hit_Enter_button(TodoTests.java:131)&#13;
+	at ✽.When User enters empty string and try to Hit Enter button(tODOApplication.feature:29)&#13;
+&#13;
+</failure>
+        </testcase>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: User should not be able to add empty string in the text box" time="0.002" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

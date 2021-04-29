@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="Selenium_Todos_Project_Test" tests="15" started="15" failures="0" errors="0" ignored="2">
+  <testsuite name="runner.TestRunner" time="34.828">
+    <testsuite name="Feature: Todo software positive/Negative scenarios" time="34.828">
+      <testsuite name="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="0.828">
+        <testcase name="Given Open Firefox and start application" classname="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="0.569"/>
+        <testcase name="When User click on valid link" classname="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="0.258"/>
+        <testcase name="Then I should be able to get into and see Todos as a header" classname="Scenario: Check if the given link is valid and application is gettin downloaded without any problem" time="0.001"/>
+      </testsuite>
+      <testsuite name="Scenario: Check if user is able to enter into text box" time="3.189">
+        <testcase name="Given User on home page" classname="Scenario: Check if user is able to enter into text box" time="1.131"/>
+        <testcase name="When Enter valid Value on empty text box and Hit Enter button" classname="Scenario: Check if user is able to enter into text box" time="2.058"/>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: Check if user is able to enter into text box" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Check the radio button functionality" time="2.169">
+        <testcase name="Given User on home page and there is a value in todo table" classname="Scenario: Check the radio button functionality" time="0.098"/>
+        <testcase name="When User clicks on radio button" classname="Scenario: Check the radio button functionality" time="2.071"/>
+        <testcase name="Then that particular selected value should get strikeout and we see clear complete" classname="Scenario: Check the radio button functionality" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Check if User can add more than one value in TO-do" time="1.33">
+        <testcase name="Given User on home page" classname="Scenario: Check if User can add more than one value in TO-do" time="1.33"/>
+        <testcase name="When User enter more than one values and hit enter" classname="Scenario: Check if User can add more than one value in TO-do" time="0.0"/>
+        <testcase name="Then More than one value should get added into table" classname="Scenario: Check if User can add more than one value in TO-do" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: User should not be able to add empty string in the text box" time="0.007" incomplete="true">
+        <skipped/>
+        <testcase name="Given User on home page" classname="Scenario: User should not be able to add empty string in the text box" time="0.006"/>
+        <testcase name="When User enters empty string and try to Hit Enter button" classname="Scenario: User should not be able to add empty string in the text box" time="0.001" ignored="true"/>
+        <testcase name="Then Value should get added in the TODO box" classname="Scenario: User should not be able to add empty string in the text box" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>
